@@ -1,44 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox & margin auto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div onclick="redExtend()" class="child child1" id="red">
+            <h2 class="click-it">Click Anywhere</h2>
+        </div>
+        <div onclick="greenExtend()" class="child child2" id="green">
+            <h2 class="click-it">Click Anywhere</h2>
+        </div>
+        <div onclick="blueExtend()" class="child child3" id="blue">
+            <h2 class="click-it">Click Anywhere</h2>
+        </div>
+        <div onclick="yellowExtend()" class="child child4" id="yellow">
+            <h2 class="click-it">Click Anywhere</h2>
+        </div>
+    </div>
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-		<title>Home</title>
-		<meta name="description" content="">
-		<meta name="author" content="YANAY BAR YOSSEF">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-
-		<link rel="stylesheet" href="css/style.css" />
-
-	</head>
-
-	<body>
-		<div>
-			<header>
-				<h1>Home</h1>
-			</header>
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					This Is My Home
-				</p>
-			</nav>
-
-			<div>
-
-			</div>
-
-			<footer>
-				<p>
-					&copy; Copyright  by YANAY BAR YOSSEF
-				</p>
-			</footer>
-		</div>
-	</body>
+        <script src="main.js"></script>
+</body>
 </html>

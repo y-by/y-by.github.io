@@ -26,7 +26,7 @@ box-sizing: border-box;
     border-left: .1em solid #000; */
     /* z-index: 9999; */
 }
-.child1 .click-it:hover {
+/* .child1 .click-it:hover {
     transform: scale(1.3,1.3);
 }
 .child2 .click-it:hover {
@@ -37,7 +37,7 @@ box-sizing: border-box;
 }
 .child4 .click-it:hover {
     transform: scale(.8,.8);
-}
+} */
 .parent {
     display: flex;
     width: 100vw;

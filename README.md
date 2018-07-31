@@ -1,5 +1,6 @@
 # y-by.github.io
-repo test for a github page
-
-this edit is from Aptana on my pc
-it's soo cool
+[link to the page](y-by.github.io)
+split screen to 4 with css flex and margin:0; 
+and use js to toggle class, 
+now click on one split area 
+make the area populate the full screen

@@ -8,13 +8,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
   <table id="table" border="1">
+      <col class="col1">
+      <col class="col col2" style="background-color: #97DB9A">
+      <col class="col col3" style="background-color:rgb(255, 187, 27);">
+      <col class="col col4" style="background-color:rgb(134, 187, 255);">
+      <col class="col col5 fix-width">
+      <col class="col col6 fix-width">
+      <col class="col col7">
     <thead>
       <tr>
         <th>CH</th>
-        <th>Multi-A</th>
-        <th>Multi-B</th>
-        <th>Multi-C</th>
+        <th>MultiA</th>
+        <th>MultiB</th>
+        <th>MultiC</th>
         <th class="hide">MUL D</th>
         <th>INST</th>
         <th>MIC</th>
@@ -25,7 +33,6 @@
     </thead>
     <tbody>
       <tr>
-          
         <td>1</td>
         <td>
           <input type="text" list="mulA_select" class="mulA-select" oninput="saveToLocal()">
@@ -512,7 +519,7 @@
       <tr>
         <td>5</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R5-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -529,7 +536,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R5-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -546,7 +553,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R5-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -579,7 +586,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R5-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -608,7 +615,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R5-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -625,19 +632,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R5-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R5-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R5-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>6</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R6-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -654,7 +661,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R6-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -671,7 +678,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R6-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -704,7 +711,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R6-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -733,7 +740,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R6-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -750,19 +757,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R6-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R6-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R6-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>7</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R7-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -779,7 +786,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R7-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -796,7 +803,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R7-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -829,7 +836,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R7-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -858,7 +865,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R7-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -875,19 +882,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R7-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R7-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R7-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>8</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R8-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -904,7 +911,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R8-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -921,7 +928,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R8-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -954,7 +961,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R8-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -983,7 +990,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R8-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1000,19 +1007,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R8-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R8-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R8-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>9</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R9-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1029,7 +1036,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R9-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1046,7 +1053,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R9-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1079,7 +1086,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R9-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1108,7 +1115,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R9-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1125,19 +1132,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R9-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R9-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R9-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>10</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R10-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1154,7 +1161,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R10-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1171,7 +1178,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R10-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1204,7 +1211,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R10-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1233,7 +1240,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R10-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1250,19 +1257,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R10-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R10-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R10-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>11</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R11-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1279,7 +1286,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R11-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1296,7 +1303,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R11-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1329,7 +1336,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R11-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1358,7 +1365,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R11-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1375,19 +1382,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R11-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R11-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R11-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>12</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R12-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1404,7 +1411,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R12-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1421,7 +1428,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R12-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1454,7 +1461,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R12-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1483,7 +1490,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R12-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1500,19 +1507,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R12-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R12-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R12-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>13</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R13-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1529,7 +1536,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R13-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1546,7 +1553,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R13-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1579,7 +1586,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R13-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1608,7 +1615,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R13-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1625,19 +1632,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R13-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R13-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R13-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>14</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R14-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1654,7 +1661,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R14-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1671,7 +1678,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R14-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1704,7 +1711,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R14-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1733,7 +1740,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R14-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1750,19 +1757,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R14-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R14-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R14-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>15</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R15-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1779,7 +1786,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R15-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1796,7 +1803,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R15-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1829,7 +1836,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R15-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1858,7 +1865,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R15-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -1875,19 +1882,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R15-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R15-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R15-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>16</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R16-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -1904,7 +1911,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R16-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1921,7 +1928,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R16-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -1954,7 +1961,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R16-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -1983,7 +1990,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R16-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2000,19 +2007,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R16-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R16-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R16-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>17</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R17-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2029,7 +2036,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R17-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2046,7 +2053,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R17-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2079,7 +2086,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R17-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2108,7 +2115,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R17-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2125,19 +2132,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R17-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R17-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R17-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>18</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R18-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2154,7 +2161,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R18-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2171,7 +2178,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R18-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2204,7 +2211,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R18-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2233,7 +2240,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R18-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2250,19 +2257,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R18-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R18-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R18-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>19</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R19-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2279,7 +2286,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R19-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2296,7 +2303,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R19-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2329,7 +2336,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R19-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2358,7 +2365,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R19-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2375,19 +2382,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R19-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R19-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R19-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>20</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R20-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2404,7 +2411,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R20-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2421,7 +2428,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R20-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2454,7 +2461,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R20-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2483,7 +2490,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R20-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2500,19 +2507,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R20-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R20-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R20-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>21</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R21-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2529,7 +2536,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R21-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2546,7 +2553,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R21-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2579,7 +2586,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R21-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2608,7 +2615,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R21-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2625,19 +2632,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R21-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R21-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R21-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>22</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R22-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2654,7 +2661,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R22-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2671,7 +2678,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R22-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2704,7 +2711,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R22-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2733,7 +2740,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R22-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2750,19 +2757,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R22-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R22-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R22-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>23</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R23-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2779,7 +2786,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R23-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2796,7 +2803,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R23-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2829,7 +2836,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R23-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2858,7 +2865,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R23-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -2875,19 +2882,19 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R23-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R23-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R23-select" oninput="saveToLocal()">
         </td>
       </tr>
       <tr>
         <td>24</td>
         <td>
-          <input type="text" name="" list="mulA-select">
+          <input type="text" name="" list="mulA-select" class="mulA-R24-select" oninput="saveToLocal()">
           <datalist name="mulA-select" id="mulA-select">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
@@ -2904,7 +2911,7 @@
           </datalist>
         </td>
         <td>
-          <input type="text" list="mulB-select" name="" id="">
+          <input type="text" list="mulB-select" class="mulB-R24-select" oninput="saveToLocal()">
             <datalist name="" id="mulB-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2921,7 +2928,7 @@
               </datalist>
         </td>
         <td>
-          <input type="text" list="mulC-select" name="" id="">
+          <input type="text" list="mulC-select" class="mulC-R24-select" oninput="saveToLocal()">
             <datalist name="" id="mulC-select">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
@@ -2954,7 +2961,7 @@
               </select>
         </td>
         <td>
-            <input type="text" name="city" list="inst-select">
+            <input type="text" name="" list="inst-select" class="inst-R24-select" oninput="saveToLocal()">
             <datalist id="inst-select">
                 <option value="BD">BD</option>
                 <option value="SNR">SNR</option>
@@ -2983,7 +2990,7 @@
             </datalist>
         </td>
         <td>
-          <input type="text" list="mic-select" name="" id="">
+          <input type="text" list="mic-select" class="mic-R24-select" oninput="saveToLocal()">
             <datalist name="" id="mic-select">
                 <option value="91">91</option>
                 <option value="52">52</option>
@@ -3000,21 +3007,20 @@
               </datalist>
         </td>
         <td>
-          <input type="text" name="band1" id="">
+          <input type="text" name="band1" id="" class="band1-R24-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band2" id="">
+          <input type="text" name="band2" id="" class="band2-R24-select" oninput="saveToLocal()">
         </td>
         <td>
-          <input type="text" name="band3" id="">
+          <input type="text" name="band3" id="" class="band3-R24-select" oninput="saveToLocal()">
         </td>
       </tr>
       
     </tbody>    
   </table>
-      
+</div>
         <button class="no-print"id="btn">DELETE ALL</button>
-      
 
 
 

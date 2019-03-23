@@ -1,42 +1,149 @@
-html {
-  font-family: sans-serif;
-}
+/* :root {
+  --mulA: DodgerBlue;
+  --mulB: darkorange;
+  --mulC: mediumseagreen;
+  --mulD: yellow;
 
+} */
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* display: flex; */
+  
+}
+/* .giveAir {
+  margin-right: 8%;
+  padding-right: 7%;
+  
+} */
 table {
   border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
-  letter-spacing: 1px;
-  font-size: 0.8rem;
-}
-
-td, th {
-  border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
 }
 
 th {
-  background-color: rgb(235,235,235);
+  font-size: 1.3em;
+}
+tr:hover {
+  background-color: #000;
+  color: yellow;
 }
 
-td {
+td, th { 
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+
+/* #mulA-select {
+  background-color:  var(--mulA);
+}
+#mulB-select {
+  background-color:  var(--mulB);
+}
+#mulC-select {
+  background-color:  var(--mulC);
+}
+#mulD-select {
+  background-color:  var(--mulD);
+} */
+
+/* option {
+  border: none;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: #000;
+  color: yellow;
+} */
+
+input {
+  border: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
   text-align: center;
+  width: 100%;
 }
-
-tr:nth-child(even) td {
-  background-color: rgb(250,250,250);
+input:hover {
+  background-color: #000;
+  color: yellow;
 }
-
-tr:nth-child(odd) td {
-  background-color: rgb(245,245,245);
-}
-
-caption {
-  padding: 10px;
+input::-webkit-calendar-picker-indicator {
+	display: none;
 }
 
 
 
+
+
+
+
+#btn {
+  border: none;
+  background-color: #ff0000;
+  color: aliceblue;
+  font-size: 1em;
+  margin-top: 30%;
+  margin-left: 10%;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  box-shadow: 4px 4px #888888;
+  outline: none;
+}
+#btn:hover {
+  background-color: #fff;
+  color: #ff0000;
+  border: solid 1px red;
+  box-shadow: none;
+}
+#btn:active {
+  background-color: #000;
+  box-shadow: none;
+}
+
+
+.fix-width {
+  min-width: 100px;
+  /* display: table-column; */
+}
+
+.col1 {
+  max-width: 20px;
+  position: sticky;
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  th {
+    font-size: .7em;
+    padding: .3em;
+    /* min-width: 55px; */
+  }
+  table {
+    width: 180vw;
+  }
+  .col2, .col3, .col4 {
+    width: 30px;
+  }
+
+}
 
 .hide {
   display: none;
 }
+
+@media print
+{    
+    .no-print{
+        display: none !important;
+    }
+}
+

@@ -1,28 +1,3024 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flexbox & margin auto</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>table_01</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="parent">
-        <div onclick="redExtend()" class="child child1" id="red">
-            <h2 class="click-it">Click Anywhere</h2>
-        </div>
-        <div onclick="greenExtend()" class="child child2" id="green">
-            <h2 class="click-it">Click Anywhere</h2>
-        </div>
-        <div onclick="blueExtend()" class="child child3" id="blue">
-            <h2 class="click-it">Click Anywhere</h2>
-        </div>
-        <div onclick="yellowExtend()" class="child child4" id="yellow">
-            <h2 class="click-it">Click Anywhere</h2>
-        </div>
-    </div>
+  <table id="table" border="1">
+    <thead>
+      <tr>
+        <th>CH</th>
+        <th>Multi-A</th>
+        <th>Multi-B</th>
+        <th>Multi-C</th>
+        <th class="hide">MUL D</th>
+        <th>INST</th>
+        <th>MIC</th>
+        <th>Band1</th>
+        <th>Band2</th>
+        <th>Band3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          
+        <td>1</td>
+        <td>
+          <input type="text" list="mulA_select" class="mulA-select" oninput="saveToLocal()">
+          <datalist name="" id="mulA_select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB_select" class="mulB-select" oninput="saveToLocal()">
+            <datalist name="" id="mulB_select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC_select" class="mulC-select" oninput="saveToLocal()">
+            <datalist name="" id="mulC_select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="giveAir">
+            <input type="text" list="inst_select" class="inst-select" oninput="saveToLocal()">
+            <datalist id="inst_select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td class="giveAir">
+          <input type="text" list="mic_select" class="mic-select" oninput="saveToLocal()">
+            <datalist name="" id="mic_select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="" class="band1-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band2" id="" class="band2-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band3" id=""  class="band3-select" oninput="saveToLocal()">
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+          <input type="text" name="" list="mulA_select" class="mulA-R2-select" oninput="saveToLocal()">
+          <datalist name="mulA_select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" class="mulB-R2-select" oninput="saveToLocal()">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" class="mulC-R2-select" oninput="saveToLocal()">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" list="inst-select" class="inst-R2-select" oninput="saveToLocal()">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" class="mic-R2-select" oninput="saveToLocal()">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="" class="band1-R2-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band2" id="" class="band2-R2-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band3" id="" class="band3-R2-select" oninput="saveToLocal()">
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>
+          <input type="text" name="" list="mulA-select" class="mulA-R3-select" oninput="saveToLocal()">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" class="mulB-R3-select" oninput="saveToLocal()">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" class="mulC-R3-select" oninput="saveToLocal()">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select" class="inst-R3-select" oninput="saveToLocal()">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" class="mic-R3-select" oninput="saveToLocal()">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="" class="band1-R3-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band2" id="" class="band2-R3-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band3" id="" class="band3-R3-select" oninput="saveToLocal()">
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <input type="text" name="" list="mulA-select" class="mulA-R4-select" oninput="saveToLocal()">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" class="mulB-R4-select" oninput="saveToLocal()">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" class="mulC-R4-select" oninput="saveToLocal()">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="" list="inst-select" class="inst-R4-select" oninput="saveToLocal()">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" class="mic-R4-select" oninput="saveToLocal()">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="" class="band1-R4-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band2" id="" class="band2-R4-select" oninput="saveToLocal()">
+        </td>
+        <td>
+          <input type="text" name="band3" id="" class="band3-R4-select" oninput="saveToLocal()">
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>
+          <input type="text" name="" list="mulA-select">
+          <datalist name="mulA-select" id="mulA-select">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+            <option value="A9">A9</option>
+            <option value="A10">A10</option>
+            <option value="A11">A11</option>
+            <option value="A12">A12</option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulB-select" name="" id="">
+            <datalist name="" id="mulB-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td>
+          <input type="text" list="mulC-select" name="" id="">
+            <datalist name="" id="mulC-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </datalist>
+        </td>
+        <td class="hide">
+            <select name="" id="mulD-select">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+                <option value="A7">A7</option>
+                <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option>
+              </select>
+        </td>
+        <td>
+            <input type="text" name="city" list="inst-select">
+            <datalist id="inst-select">
+                <option value="BD">BD</option>
+                <option value="SNR">SNR</option>
+                <option value="HH">HH</option>
+                <option value="TOM1">TOM1</option>
+                <option value="TOM2">TOM2</option>
+                <option value="TOM3">TOM3</option>
+                <option value="OH-L">OH-L</option>
+                <option value="OH-R">OH-R</option>
+                <option value="BASS">BASS</option>
+                <option value="GTR">GTR</option>
+                <option value="ACC">ACC</option>
+                <option value="KEY-L">KEY-L</option>
+                <option value="KEY-R">KEY-R</option>
+                <option value="PC-1">PC-1</option>
+                <option value="PC-2">PC-2</option>
+                <option value="PC-3">PC-3</option>
+                <option value="PC-4">PC-4</option>
+                <option value="PC-5">PC-5</option>
+                <option value="PC-6">PC-6</option>
+                <option value="DRUM-VOC">DRUM-VOC</option>
+                <option value="BASS-VOC">BASS-VOC</option>
+                <option value="GTR-VOC">GTR-VOC</option>
+                <option value="KEY-VOC">KEY-VOC</option>
+                <option value="MAIN-VOC">MAIN-VOC</option>
+            </datalist>
+        </td>
+        <td>
+          <input type="text" list="mic-select" name="" id="">
+            <datalist name="" id="mic-select">
+                <option value="91">91</option>
+                <option value="52">52</option>
+                <option value="57">57</option>
+                <option value="81">81</option>
+                <option value="906">906</option>
+                <option value="KSM137">KSM137</option>
+                <option value="58">58</option>
+                <!-- <option value="A8">A8</option>
+                <option value="A9">A9</option>
+                <option value="A10">A10</option>
+                <option value="A11">A11</option>
+                <option value="A12">A12</option> -->
+              </datalist>
+        </td>
+        <td>
+          <input type="text" name="band1" id="">
+        </td>
+        <td>
+          <input type="text" name="band2" id="">
+        </td>
+        <td>
+          <input type="text" name="band3" id="">
+        </td>
+      </tr>
+      
+    </tbody>    
+  </table>
+      
+        <button class="no-print"id="btn">DELETE ALL</button>
+      
 
-        <script src="main.js"></script>
+
+
+
+  <script src="main.js"></script>
 </body>
 </html>

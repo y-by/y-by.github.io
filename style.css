@@ -83,6 +83,11 @@ input:hover {
 input::-webkit-calendar-picker-indicator {
 	display: none;
 }
+input::-webkit-clear-button
+{
+    display: none; /* Hide the button */
+    -webkit-appearance: none; /* turn off default browser styling */
+}
 
 
 

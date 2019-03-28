@@ -88,6 +88,10 @@ input:hover {
     display: none; /* Hide the button */
     -webkit-appearance: none; /* turn off default browser styling */
 }
+input[type="date"]
+{
+    -webkit-appearance: none;
+}
 
 
 

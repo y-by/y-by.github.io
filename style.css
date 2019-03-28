@@ -11,13 +11,23 @@ body {
   /* box-sizing: border-box; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   /* display: flex; */
-  
 }
-/* .giveAir {
-  margin-right: 8%;
-  padding-right: 7%;
-  
-} */
+
+/* input date */
+.date {
+  width: 197px;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+#start {
+  text-align: left;
+}
+.title {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -71,9 +81,9 @@ input:hover {
   background-color: #000;
   color: yellow;
 }
-input::-webkit-calendar-picker-indicator {
+/* input::-webkit-calendar-picker-indicator {
 	display: none;
-}
+} */
 
 
 

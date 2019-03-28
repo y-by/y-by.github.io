@@ -134,6 +134,9 @@ input[type="date"]
   position: sticky;
 
 }
+.col2, .col3, col4 {
+  min-width: 55px;
+}
 
 
 

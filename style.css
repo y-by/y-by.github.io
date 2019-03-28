@@ -80,9 +80,9 @@ input:hover {
   background-color: #000;
   color: yellow;
 }
-input::-webkit-calendar-picker-indicator {
+/* input::-webkit-calendar-picker-indicator {
 	display: none;
-}
+} */
 ::-webkit-clear-button
 {
     display: none; /* Hide the button */

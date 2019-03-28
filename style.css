@@ -13,21 +13,20 @@ body {
   /* display: flex; */
 }
 
-/* input date */
-.date {
-  width: 197px;
-  display: inline-block;
-  font-size: 1.5em;
+/* input date and title*/
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#date {
+  font-size: 1.7em;
+}
+#title {
+  font-size: 2em;
 }
 
-#start {
-  text-align: left;
-}
-.title {
-  font-size: 1.5em;
-  display: inline-block;
-}
-
+/* the table */
 table {
   border-collapse: collapse;
 }

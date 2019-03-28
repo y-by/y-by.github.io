@@ -9,19 +9,21 @@
 </head>
 <body>
   <div class="container">
-    <div class="date">  
-      <input  type="date" 
-              id="start" 
-              name="Date" 
-              value="2019-03-28" 
-              oninput="saveToLocal()"/>
-    </div>
-    <div class="title">
-      <input  type="text" 
-              class="title" 
-              value="Title for the document" 
-              oninput="saveToLocal()"/>
-    </div>
+    <header>
+      <div class="item">  
+        <input  type="date" 
+                id="date" 
+                name="Date" 
+                value="2019-03-28" 
+                oninput="saveToLocal()"/>
+      </div>
+      <div class="item">
+        <input  type="text" 
+                id="title" 
+                value="Title for the document" 
+                oninput="saveToLocal()"/>
+      </div>
+    </header>
     <table id="table" border="1">
       <col class="col1">
       <col class="col col2" style="background-color: #97DB9A">
@@ -39,9 +41,9 @@
           <th class="hide">MUL D</th>
           <th>INST</th>
           <th>MIC</th>
-          <th>Band1</th>
-          <th>Band2</th>
-          <th>Band3</th>
+          <th><input type="text" id="band1" placeholder="Band1"/></th>
+          <th><input type="text" id="band2" placeholder="Band2"/></th>
+          <th><input type="text" id="band3" placeholder="Band3"/></th>
         </tr>
       </thead>
       <tbody>

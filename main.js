@@ -1,7 +1,13 @@
 
 console.log("i'm working");
 // data input declaration
+let date = document.querySelector('#date')
+let tableTitle = document.querySelector('#title')
 let table = document.querySelector('table')
+
+let band1 = document.querySelector('#band1')
+let band2 = document.querySelector('#band2')
+let band3 = document.querySelector('#band3')
 
 let data1 = document.querySelector('.mulA-select')
 let data1R2 = document.querySelector('.mulA-R2-select')
@@ -223,6 +229,12 @@ function saveToLocal() {
   // console.log(dataBand3.value)
   // console.log(dataBand3R2.value)
   // console.log(dataBand3R3.value)
+
+  localStorage.setItem('band1', band1.value)
+  localStorage.setItem('band2', band2.value)
+  localStorage.setItem('band3', band3.value)
+  localStorage.setItem('tableTitle', tableTitle.value)
+  localStorage.setItem('date', date.value)
   localStorage.setItem('data1', data1.value)
   localStorage.setItem('data1R2', data1R2.value)
   localStorage.setItem('data1R3', data1R3.value)
@@ -418,6 +430,11 @@ function saveToLocal() {
 }
 
 // Check for saved items
+let saveBand1 = localStorage.getItem('band1')
+let saveBand2 = localStorage.getItem('band2')
+let saveBand3 = localStorage.getItem('band3')
+let saveTitle = localStorage.getItem('tableTitle');
+let saveDate = localStorage.getItem('date');
 let saved1 = localStorage.getItem('data1');
 let saved1R2 = localStorage.getItem('data1R2');
 let saved1R3 = localStorage.getItem('data1R3');
@@ -612,7 +629,7 @@ let savedBand3R23 = localStorage.getItem('dataBand3R23');
 let savedBand3R24 = localStorage.getItem('dataBand3R24');
 
 // If there are any saved items, update our list
-if (saved1 || saved2 || saved3 || 
+if (saveBand1 || saveBand2 || saveBand3 || saveTitle || saveDate || saved1 || saved2 || saved3 || 
     savedInst || savedMic || savedBand1 || 
     savedBand2 || savedBand3 || saved1R2 || 
     savedR2 || saved3R2 || savedInstR2 ||
@@ -631,6 +648,11 @@ if (saved1 || saved2 || saved3 ||
     saved1R21 || saved1R22 || saved1R23 ||
     saved1R24
     ) {
+  band1.value = saveBand1;
+  band2.value = saveBand2;
+  band3.value = saveBand3;
+  tableTitle.value = saveTitle;
+  date.value = saveDate;
 	data1.value = saved1;
 	data1R2.value = saved1R2;
 	data1R3.value = saved1R3;

@@ -859,9 +859,17 @@ let button = document.querySelector('#btn')
 
 // clear the locall host and delete the view
 button.addEventListener('click', function () {
-  localStorage.clear();
-  console.log(data1);
-  window.location.reload()
+  let txt;
+  let r = confirm("hey, click OK if you SURE that you want to delete everything... forever moha ha ha ha, don't blame me!");
+  if (r == true) {
+    localStorage.clear();
+    console.log(data1);
+    window.location.reload()
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("message").innerHTML = txt;
 });
 
 

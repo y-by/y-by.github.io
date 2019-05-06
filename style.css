@@ -136,7 +136,12 @@ input[type="date"]
 }
 
 
+.frame {
+  width: 100vw;
+  height: 100vh;
+  margin-left: -55px;
 
+}
 
 
 

@@ -1,6 +1,7 @@
 .container {
 /*   width: 100vw;
   height: 100vh; */
+  background: #000;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 35px;

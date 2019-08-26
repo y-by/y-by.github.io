@@ -1,0 +1,70 @@
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(196, 196, 196);
+  padding-top: 20%
+}
+.head {
+  text-align: center;
+  padding-bottom: 150px;
+}
+.container {
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  background: #000;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.item {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.708);
+  border-radius: 50px;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.image {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.transform {
+  transition: all 1s ease;
+  margin-top: -150px;
+}
+.transform-active {
+  margin-top: -300px;
+  transition: all 2s ease;
+}
+
+
+/* a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;} */
